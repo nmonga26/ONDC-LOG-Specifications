@@ -21,9 +21,22 @@ message:
         reference: if any
     items:
       description: list items selected from the response of /on_search
-      required: required
-      usage: "-"
-      reference: if any
+      parent: true
+      billing:
+        description: billing details of the marketplace (MSN or ISN retail seller app) for invoicing;
+        required: required
+        usage: "-"
+        reference: if any
+      name:
+        description: name on the invoice
+        required: required
+        usage: ONDC sellerapp
+        reference: if any
+      address:
+        description: address on the invoice
+        required: required
+        usage: My house or building name
+        reference: if any
     provider:
       locations:
         description: mandatory only if provider.locations was returned in /on_search
@@ -102,4 +115,4 @@ message:
           description: define the type of data contained
           required: optional
           usage: "text/html"
-          reference: if any    
+          reference: if any 
