@@ -83,7 +83,6 @@ details:
 reference: if any
 steps:
   - summary: Search Logistics based on fulfilment start and end location + Product details.
-  - summary: Search Logistics based on fulfilment start and end location + Product details.
     api: search
     description: Search intent sent by the buyer based on the start & end location + Product details.
     reference: if any
