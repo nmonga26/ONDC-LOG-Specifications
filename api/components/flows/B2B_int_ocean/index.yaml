@@ -83,12 +83,11 @@ details:
 reference: if any
 steps:
   - summary: Search Logistics based on fulfilment start and end location + Product details.
-  - summary: Search Logistics based on fulfilment start and end location + Product details.
     api: search
     description: Search Logistics based on fulfilment start and end location + Product details.
     reference: if any
     example:
-      $ref: "../../Examples/B2B_Int_Logistics_yaml/search/search_by_air_delivery.yaml"
+      $ref: "../../Examples/B2B_Int_Logistics_yaml/search/search_by_ocean_delivery.yaml"
   - summary: LSP sends catalog - Air & Ocean Cargo
     api: on_search
     description: Logistics service provider sends the catalog based on search + Sends the KYC Link. 
