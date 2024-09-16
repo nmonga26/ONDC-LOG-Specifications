@@ -8200,7 +8200,7 @@ x-flows:
         reference: if any
         example:
           summary: Search by Category - Ocean Delivery
-          description: null
+          description: Search by Category - Ocean Delivery
           value:
             context:
               domain: ONDC:LOG11
@@ -11602,7 +11602,7 @@ x-flows:
         reference: if any
         example: &ref_46
           summary: Search by category - Air Delivery
-          description: null
+          description: Search by category - Air Delivery
           value:
             context:
               domain: ONDC:LOG11
@@ -20100,7 +20100,7 @@ x-examples:
       search:
         examples:
           - summary: Search by category - Air Delivery
-            description: null
+            description: Search by category - Air Delivery
             value:
               context:
                 domain: ONDC:LOG11
@@ -20256,7 +20256,7 @@ x-examples:
                             code: Temp_Max
                           value: '4'
           - summary: Search by Category - Ocean Delivery
-            description: null
+            description: Search by Category - Ocean Delivery
             value:
               context:
                 domain: ONDC:LOG11
