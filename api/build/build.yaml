@@ -3769,7 +3769,6 @@ x-flows:
             note over B2B BPP,Logistics BPP: **ORDER STATUS**
             B2B BPP->>Logistics BPP: **/status**  - Seller requests for Shipment status
             Logistics BPP->>B2B BPP: **/on_status** - Logistics BPP sends <br/>                     the status of shipment
-    reference: if any
     steps:
       - summary: >-
           Search Logistics based on fulfilment start and end location + Product
@@ -8190,7 +8189,6 @@ x-flows:
             Logistics BPP->>B2B BPP: **/on_status** - Logistics BPP sends <br/>                     the status of shipment
             B2B BPP->>Logistics BPP: **/status**  - Seller requests for Shipment status
             Logistics BPP->>B2B BPP: **/on_status** - Logistics BPP sends <br/>                     the status of shipment
-    reference: if any
     steps:
       - summary: >-
           Search Logistics based on fulfilment start and end location + Product
@@ -11593,7 +11591,6 @@ x-flows:
             Logistics BPP->>B2B BPP: **/on_status** - Logistics BPP sends <br/>                     the status of shipment
             B2B BPP->>Logistics BPP: **/status**  - Seller requests for Shipment status
             Logistics BPP->>B2B BPP: **/on_status** - Logistics BPP sends <br/>                     the status of shipment
-    reference: if any
     steps:
       - summary: >-
           Search Logistics based on fulfilment start and end location + Product
@@ -13294,7 +13291,6 @@ x-flows:
     description: >-
       The below flow shows the journey of Logistics buyer buying  logistics
       services and Logistics buyer cancelling the order.
-    reference: if any
     steps:
       - summary: Search Logistics - Air Delivery
         api: search
