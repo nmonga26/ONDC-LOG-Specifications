@@ -101,13 +101,13 @@
           },
           "customer": {
             "person": {
-                "name": "xyz"
+              "name": "xyz"
             },
             "contact": {
-                "phone": "9886098860",
-                "email": "xyz.efgh@gmail.com"
+              "phone": "9886098860",
+              "email": "xyz.efgh@gmail.com"
             }
-        },
+          },
           "stops": [
             {
               "id": "L1",
@@ -164,6 +164,21 @@
                   "url": "URL for instructions"
                 }
               }
+            }
+          ],
+          "tags": [
+            {
+              "descriptor": {
+                "code": "Delivery_Terms"
+              },
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "RTO_Action"
+                  },
+                  "value": "no"
+                }
+              ]
             }
           ]
         }

@@ -212,9 +212,6 @@
                   "descriptor": {
                     "code": "Doc_Way_Bill_No"
                   },
-<<<<<<< HEAD:api/components/Examples/B2B_Dom_Logistics_yaml copy/on_confirm/on_confirm_air.json
-                  "value": "1209567899003"
-=======
                   "value": "1209878992826353"
                 },
                 {
@@ -222,7 +219,6 @@
                     "code": "RTO_Action"
                   },
                   "value": "no"
->>>>>>> dcf1d0c (Consinee_name added):api/components/Examples/B2B_Dom_Logistics/on_confirm/on_confirm_air.json
                 }
               ]
             }

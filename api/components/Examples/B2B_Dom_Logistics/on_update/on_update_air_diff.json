@@ -110,18 +110,18 @@
           },
           "agent": {
             "person": {
-                "name": "Ramu"
+              "name": "Ramu"
             }
-        },
-        "customer": {
+          },
+          "customer": {
             "person": {
-                "name": "xyz"
+              "name": "xyz"
             },
             "contact": {
-                "phone": "9886098860",
-                "email": "xyz.efgh@gmail.com"
+              "phone": "9886098860",
+              "email": "xyz.efgh@gmail.com"
             }
-        },
+          },
           "tracking": false,
           "stops": [
             {
