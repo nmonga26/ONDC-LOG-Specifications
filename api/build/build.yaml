@@ -2738,6 +2738,9 @@ x-enum:
                     - code: Order-delivered
                       description: about the enum
                       reference: <PR/Issue/Discussion Links md format text>
+                    - code: Order-partially-delivered
+                      description: about the enum
+                      reference: <PR/Issue/Discussion Links md format text>
                     - code: RTO-Initiated
                       description: about the enum
                       reference: <PR/Issue/Discussion Links md format text>
@@ -4653,9 +4656,6 @@ x-flows:
                       - R1
                     descriptor:
                       code: P2H2P
-                    time:
-                      label: TAT
-                      duration: P7D
                 quote:
                   price:
                     currency: INR
@@ -4686,6 +4686,12 @@ x-flows:
                     agent:
                       person:
                         name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     stops:
                       - id: L1
                         parent_stop_id: ''
@@ -4727,6 +4733,13 @@ x-flows:
                           additional_desc:
                             content_type: text/html
                             url: URL for instructions
+                    tags:
+                      - descriptor:
+                          code: Delivery_Terms
+                        list:
+                          - descriptor:
+                              code: RTO_Action
+                            value: 'no'
                 billing:
                   name: ONDC sellerapp
                   address: My house or building name
@@ -4937,6 +4950,15 @@ x-flows:
                     state:
                       descriptor:
                         code: Pending
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     tracking: false
                     stops:
                       - id: L1
@@ -5009,6 +5031,9 @@ x-flows:
                           - descriptor:
                               code: Doc_Way_Bill_No
                             value: '1209567899003'
+                          - descriptor:
+                              code: RTO_Action
+                            value: 'no'
                 cancellation_terms:
                   - fulfillment_state:
                       descriptor:
@@ -5242,6 +5267,15 @@ x-flows:
                     state:
                       descriptor:
                         code: Pending
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     tracking: false
                     stops:
                       - id: L1
@@ -5364,6 +5398,15 @@ x-flows:
                     state:
                       descriptor:
                         code: Pending
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     tracking: false
                     stops:
                       - id: L1
@@ -6270,7 +6313,7 @@ x-flows:
               bpp_uri: https://logistics_seller.com/ondc
               transaction_id: 9fdb667c-76c6-456a-9742-ba9caa5eb765
               message_id: '1755281254860'
-              timestamp: '2023-10-17T21:00:00.000Z'
+              timestamp: '2023-02-06T21:00:00.000Z'
               ttl: PT30S
             message:
               order:
@@ -6288,15 +6331,18 @@ x-flows:
                       - C2
                     descriptor:
                       code: P2H2P
-                    time:
-                      label: TAT
-                      duration: P7D
                 fulfillments:
                   - id: '1'
                     type: Delivery
                     agent:
                       person:
                         name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     stops:
                       - id: L1
                         parent_stop_id: ''
@@ -6338,6 +6384,13 @@ x-flows:
                           additional_desc:
                             content_type: text/html
                             url: URL for instructions
+                    tags:
+                      - descriptor:
+                          code: Delivery_Terms
+                        list:
+                          - descriptor:
+                              code: RTO_Action
+                            value: 'no'
                 quote:
                   price:
                     currency: INR
@@ -6498,8 +6551,8 @@ x-flows:
                       - descriptor:
                           code: Accept_BPP_Terms
                         value: 'Y'
-                created_at: '2023-10-17T22:00:00.000Z'
-                updated_at: '2023-10-17T22:00:00.000Z'
+                created_at: '2023-02-06T22:00:00.000Z'
+                updated_at: '2023-02-06T22:00:00.000Z'
       - summary: Logistics Provider accepts the order.
         api: on_confirm
         description: Logistics Provider accepts the order.
@@ -6573,6 +6626,15 @@ x-flows:
                     state:
                       descriptor:
                         code: Pending
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     tracking: false
                     stops:
                       - id: L1
@@ -6642,6 +6704,9 @@ x-flows:
                           - descriptor:
                               code: Doc_Way_Bill_No
                             value: '1209567899003'
+                          - descriptor:
+                              code: RTO_Action
+                            value: 'no'
                 cancellation_terms:
                   - fulfillment_state:
                       descriptor:
@@ -6874,6 +6939,15 @@ x-flows:
                     state:
                       descriptor:
                         code: Pending
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     tracking: false
                     stops:
                       - id: L1
@@ -6992,6 +7066,15 @@ x-flows:
                     state:
                       descriptor:
                         code: Pending
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     tracking: false
                     stops:
                       - id: L1
@@ -9102,6 +9185,15 @@ x-flows:
                 fulfillments:
                   - id: '1'
                     type: Delivery
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     stops:
                       - id: L1
                         parent_stop_id: ''
@@ -9421,6 +9513,15 @@ x-flows:
                     state:
                       descriptor:
                         code: Pending
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     tracking: false
                     stops:
                       - id: L1
@@ -9748,6 +9849,15 @@ x-flows:
                     state:
                       descriptor:
                         code: Pending
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     tracking: false
                     stops:
                       - id: L1
@@ -9954,6 +10064,15 @@ x-flows:
                     state:
                       descriptor:
                         code: Pending
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     tracking: false
                     stops:
                       - id: L1
@@ -12050,6 +12169,15 @@ x-flows:
                 fulfillments:
                   - id: '1'
                     type: Delivery
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     stops:
                       - id: L1
                         parent_stop_id: ''
@@ -12372,6 +12500,15 @@ x-flows:
                     state:
                       descriptor:
                         code: Pending
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     tracking: false
                     stops:
                       - id: L1
@@ -12702,6 +12839,15 @@ x-flows:
                     state:
                       descriptor:
                         code: Pending
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     tracking: false
                     stops:
                       - id: L1
@@ -12909,6 +13055,15 @@ x-flows:
                     state:
                       descriptor:
                         code: Pending
+                    agent:
+                      person:
+                        name: Ramu
+                    customer:
+                      person:
+                        name: xyz
+                      contact:
+                        phone: '9886098860'
+                        email: xyz.efgh@gmail.com
                     tracking: false
                     stops:
                       - id: L1
@@ -14234,7 +14389,7 @@ x-examples:
                 bpp_uri: https://logistics_seller.com/ondc
                 transaction_id: 9fdb667c-76c6-456a-9742-ba9caa5eb765
                 message_id: '1755281254860'
-                timestamp: '2023-10-17T21:00:00.000Z'
+                timestamp: '2023-02-06T21:00:00.000Z'
                 ttl: PT30S
               message:
                 order:
@@ -14252,15 +14407,18 @@ x-examples:
                         - C2
                       descriptor:
                         code: P2H2P
-                      time:
-                        label: TAT
-                        duration: P7D
                   fulfillments:
                     - id: '1'
                       type: Delivery
                       agent:
                         person:
                           name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       stops:
                         - id: L1
                           parent_stop_id: ''
@@ -14302,6 +14460,13 @@ x-examples:
                             additional_desc:
                               content_type: text/html
                               url: URL for instructions
+                      tags:
+                        - descriptor:
+                            code: Delivery_Terms
+                          list:
+                            - descriptor:
+                                code: RTO_Action
+                              value: 'no'
                   quote:
                     price:
                       currency: INR
@@ -14462,8 +14627,8 @@ x-examples:
                         - descriptor:
                             code: Accept_BPP_Terms
                           value: 'Y'
-                  created_at: '2023-10-17T22:00:00.000Z'
-                  updated_at: '2023-10-17T22:00:00.000Z'
+                  created_at: '2023-02-06T22:00:00.000Z'
+                  updated_at: '2023-02-06T22:00:00.000Z'
           - summary: Logistics buyer confirms the order (Surface Delivery)
             description: Logistics buyer confirms the order.
             value:
@@ -14501,9 +14666,6 @@ x-examples:
                         - R1
                       descriptor:
                         code: P2H2P
-                      time:
-                        label: TAT
-                        duration: P7D
                   quote:
                     price:
                       currency: INR
@@ -14534,6 +14696,12 @@ x-examples:
                       agent:
                         person:
                           name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       stops:
                         - id: L1
                           parent_stop_id: ''
@@ -14575,6 +14743,13 @@ x-examples:
                             additional_desc:
                               content_type: text/html
                               url: URL for instructions
+                      tags:
+                        - descriptor:
+                            code: Delivery_Terms
+                          list:
+                            - descriptor:
+                                code: RTO_Action
+                              value: 'no'
                   billing:
                     name: ONDC sellerapp
                     address: My house or building name
@@ -14756,6 +14931,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -14890,6 +15074,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -14982,6 +15175,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -16363,6 +16565,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -16432,6 +16643,9 @@ x-examples:
                             - descriptor:
                                 code: Doc_Way_Bill_No
                               value: '1209567899003'
+                            - descriptor:
+                                code: RTO_Action
+                              value: 'no'
                   cancellation_terms:
                     - fulfillment_state:
                         descriptor:
@@ -16685,6 +16899,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -16757,6 +16980,9 @@ x-examples:
                             - descriptor:
                                 code: Doc_Way_Bill_No
                               value: '1209567899003'
+                            - descriptor:
+                                code: RTO_Action
+                              value: 'no'
                   cancellation_terms:
                     - fulfillment_state:
                         descriptor:
@@ -18172,6 +18398,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -18450,6 +18685,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -18659,6 +18903,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -18930,6 +19183,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -20570,6 +20832,15 @@ x-examples:
                   fulfillments:
                     - id: '1'
                       type: Delivery
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       stops:
                         - id: L1
                           parent_stop_id: ''
@@ -20834,6 +21105,15 @@ x-examples:
                   fulfillments:
                     - id: '1'
                       type: Delivery
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       stops:
                         - id: L1
                           parent_stop_id: ''
@@ -21104,6 +21384,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -21253,6 +21542,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -24177,6 +24475,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -24548,6 +24855,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -24925,6 +25241,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
@@ -25221,6 +25546,15 @@ x-examples:
                       state:
                         descriptor:
                           code: Pending
+                      agent:
+                        person:
+                          name: Ramu
+                      customer:
+                        person:
+                          name: xyz
+                        contact:
+                          phone: '9886098860'
+                          email: xyz.efgh@gmail.com
                       tracking: false
                       stops:
                         - id: L1
