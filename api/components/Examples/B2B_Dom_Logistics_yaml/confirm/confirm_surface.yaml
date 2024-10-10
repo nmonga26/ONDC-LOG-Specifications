@@ -35,9 +35,6 @@ value:
             - R1
           descriptor:
             code: P2H2P
-          time:
-            label: TAT
-            duration: P7D
       quote:
         price:
           currency: INR
@@ -68,6 +65,12 @@ value:
           agent:
             person:
               name: Ramu
+          customer:
+            person:
+              name: xyz
+            contact:
+              phone: '9886098860'
+              email: xyz.efgh@gmail.com
           stops:
             - id: L1
               parent_stop_id: ''
@@ -109,6 +112,13 @@ value:
                 additional_desc:
                   content_type: text/html
                   url: URL for instructions
+          tags:
+            - descriptor:
+                code: Delivery_Terms
+              list:
+                - descriptor:
+                    code: RTO_Action
+                  value: 'no'
       billing:
         name: ONDC sellerapp
         address: My house or building name

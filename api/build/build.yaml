@@ -12986,9 +12986,6 @@ x-flows:
                               code: Named_Place_Of_Delivery
                             value: UN:SIN
                           - descriptor:
-                              code: AWB_No
-                            value: '1209878992826353'
-                          - descriptor:
                               code: BL_No
                             value: '1209878992826353'
                           - descriptor:
@@ -25300,9 +25297,6 @@ x-examples:
                             - descriptor:
                                 code: Named_Place_Of_Delivery
                               value: UN:SIN
-                            - descriptor:
-                                code: AWB_No
-                              value: '1209878992826353'
                             - descriptor:
                                 code: BL_No
                               value: '1209878992826353'
