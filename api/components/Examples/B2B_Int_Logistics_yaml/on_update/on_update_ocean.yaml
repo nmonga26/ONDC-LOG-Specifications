@@ -91,6 +91,15 @@ value:
           state:
             descriptor:
               code: Pending
+          agent:
+            person:
+              name: Ramu
+          customer:
+            person:
+              name: xyz
+            contact:
+              phone: '9886098860'
+              email: xyz.efgh@gmail.com
           tracking: false
           stops:
             - id: L1
@@ -167,9 +176,6 @@ value:
                 - descriptor:
                     code: Named_Place_Of_Delivery
                   value: UN:SIN
-                - descriptor:
-                    code: AWB_No
-                  value: '1209878992826353'
                 - descriptor:
                     code: BL_No
                   value: '1209878992826353'
