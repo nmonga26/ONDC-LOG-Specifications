@@ -88,39 +88,39 @@ value:
         time:
           timestamp: '2023-10-17T21:11:00.000Z'
       payments:
-        collected_by: BPP
-        type: PRE-FULFILLMENT
-        tags:
-          - descriptor:
-              code: Settlement_Details
-            list:
-              - descriptor:
-                  code: Counterparty
-                value: BAP
-              - descriptor:
-                  code: Mode
-                value: UPI
-              - descriptor:
-                  code: Beneficiary_Name
-                value: xxxxx
-              - descriptor:
-                  code: Bank_Account_No
-                value: xxxxx
-              - descriptor:
-                  code: Ifsc_Code
-                value: xxxxxxx
-              - descriptor:
-                  code: UPI_Address
-                value: xxxxxxx
-          - descriptor:
-              code: Collection_Details
-            list:
+        - collected_by: BPP
+          type: PRE-FULFILLMENT
+          tags:
             - descriptor:
-                code: Amount
-              value: '20000'
+                code: Settlement_Details
+              list:
+                - descriptor:
+                    code: Counterparty
+                  value: BAP
+                - descriptor:
+                    code: Mode
+                  value: UPI
+                - descriptor:
+                    code: Beneficiary_Name
+                  value: xxxxx
+                - descriptor:
+                    code: Bank_Account_No
+                  value: xxxxx
+                - descriptor:
+                    code: Ifsc_Code
+                  value: xxxxxxx
+                - descriptor:
+                    code: UPI_Address
+                  value: xxxxxxx
             - descriptor:
-                code: Type
-              value: ON-FULFILLMENT
+                code: Collection_Details
+              list:
+              - descriptor:
+                  code: Amount
+                value: '20000'
+              - descriptor:
+                  code: Type
+                value: ON-FULFILLMENT
       xinput:
         form:
           url: https://lsp.com/xxx/kyc
